@@ -11,7 +11,7 @@ export class UserService {
     {
       id: 1,
       name: 'John Doe',
-      email: '8iMlG@example.com',
+      username: '8iMlG@example.com',
       password: 'password',
       elo: 1550,
       wins: 2,
@@ -21,7 +21,7 @@ export class UserService {
     {
       id: 2,
       name: 'Jane Doe',
-      email: '2vVb0@example.com',
+      username: '2vVb0@example.com',
       password: 'password',
       elo: 1700,
       wins: 10,
@@ -42,9 +42,9 @@ export class UserService {
     return this.users;
   }
 
-  public async findOne(id: number): Promise<User | undefined>
+  public async findOne(idOrUsername: number|string): Promise<User | undefined>
   {
-    return this.users.find(user => user.id === id);
+    return this.users.find(user => user.id === idOrUsername || user.username === idOrUsername);
   }
 
   public async update(id: number, updateUserDto: UpdateUserDto): Promise<boolean>
