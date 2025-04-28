@@ -1,15 +1,13 @@
 import { defineStore, acceptHMRUpdate } from 'pinia';
 
 export const useMatchStore = defineStore('match', {
-  state: () => ({
-    'match': null,
-  }),
-
+  state: () => ({}),
   getters: {
   },
-
   actions: {
-
+    initMatch() {
+      this.$state = [];
+    },
   },
 });
 

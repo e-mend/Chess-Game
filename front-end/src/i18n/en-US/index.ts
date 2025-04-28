@@ -6,4 +6,8 @@ export default {
   reset: 'Reset',
   settings: 'Settings',
   about: 'About',
+  toggleDraggable: 'Toggle Draggable',
+  toggleViewOnly: 'Toggle View Only',
+  toggleCoordinates: 'Toggle Coordinates',
+  toggleAnimations: 'Toggle Animations',
 };

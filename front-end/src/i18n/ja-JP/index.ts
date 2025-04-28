@@ -6,4 +6,8 @@ export default {
   reset: 'リセット',
   settings: '設定',
   about: 'このゲームについて',
+  toggleDraggable: 'ドラッグ可能に切り替え',
+  toggleViewOnly: 'ビューオンリーに切り替え',
+  toggleCoordinates: '座標を切り替え',
+  toggleAnimations: 'アニメーションを切り替え',
 };
